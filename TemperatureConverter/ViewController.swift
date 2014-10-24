@@ -43,20 +43,20 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        let screen = UIScreen.mainScreen()
-        
-        titleLabel.frame = CGRect(x: 16, y: 16 + topLayoutGuide.length, width: screen.bounds.width - 16 * 2, height: 21);
-        
-        // Always return the size of the screen in portraits orientation
-        println("screen fixed bounds: \(screen.fixedCoordinateSpace.bounds)")
-        // Since ios8, this is the size of the screen in its current orientation
-        println("screen bounds: \(screen.bounds)")
-        
-        println("top layout guide: \(topLayoutGuide.length)")
-    }
+//    override func viewWillLayoutSubviews() {
+//        super.viewWillLayoutSubviews()
+//        
+//        let screen = UIScreen.mainScreen()
+//        
+//        titleLabel.frame = CGRect(x: 16, y: 16 + topLayoutGuide.length, width: screen.bounds.width - 16 * 2, height: 21);
+//        
+//        // Always return the size of the screen in portraits orientation
+//        println("screen fixed bounds: \(screen.fixedCoordinateSpace.bounds)")
+//        // Since ios8, this is the size of the screen in its current orientation
+//        println("screen bounds: \(screen.bounds)")
+//        
+//        println("top layout guide: \(topLayoutGuide.length)")
+//    }
     
     
 }
